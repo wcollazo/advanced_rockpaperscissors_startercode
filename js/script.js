@@ -24,7 +24,14 @@
 
 //FUNCTIONS
 
+    
 
 
 // DOCUMENT READY FUNCTION
-
+$(document).ready(function(){
+    $("#button").click(function(){
+        var name = $("#userinput").val();
+        $("#greeting").html(name);
+    });    
+        
+})

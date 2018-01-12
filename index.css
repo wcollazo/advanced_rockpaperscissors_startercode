@@ -1,0 +1,21 @@
+.section {
+  padding: 1em 0;
+  border-bottom: 2px dashed gray;
+}
+
+h1, #submit-name {
+  font-size: 2em;
+}
+
+input {
+  font-size: 1em;
+}
+
+#greeting {
+  text-align: center;
+  font-size: 2em;
+  text-shadow: 3px 3px 3px gray;
+}
+#button {
+    color: lightblue;
+    }
