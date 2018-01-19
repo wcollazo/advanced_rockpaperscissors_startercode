@@ -1,5 +1,5 @@
 .section {
-  padding: 1em 0;
+  padding: 0em 0;
   border-bottom: 2px dashed gray;
 }
 
@@ -19,3 +19,21 @@ input {
 #button {
     color: lightblue;
     }
+#cpu {
+    position: relative;
+}
+.choice { 
+  float: left;
+  
+}
+#cpu {
+  float: right;
+}
+#outcome {
+  padding: 1em 0;
+  border-bottom: 2px double black;
+}
+#barrier {
+  
+  
+}

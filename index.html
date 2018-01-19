@@ -3,8 +3,11 @@
 
   <head>
       <title>RPS Game</title>
-      <h1>Rock Paper Scissors AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</h1>
+      <div style = class ="col-xs-6">
+        <h1>Rock Paper Scissors AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</h1>
+      </div>
       <!-- Link CSS here -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
       <link rel="stylesheet" type="text/css" href="index.css">
       <!-- Link JQuery here -->
         <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
@@ -25,7 +28,8 @@
      -->
     <div class="container text-center">
       <P>It's simple, type "Rock", "Paper", or "Scissors" in the input below and see if you win!</P>
-      <img src="">
+      <p>Da Rulez: </p>
+      <img src="https://www.skeptic.com/wordpress/wp-content/uploads/Rock-paper-scisscors-510px.jpg">
 
 
     
@@ -33,14 +37,25 @@
     <div class="section">
             <h1></h1>
             <input id="userinput" placeholder="Your hand?">
-            
-        </div>
-        <div>
             <button id="button">Play?</button>
         </div>
-        <div>
-            <p id="greeting">as</p>
-        </div>
+  <div class="row">
+          <div  style = "background-color: red" class="col-xs-6">
+            Your Choice
+            <p id="playerChoice"></p>
+          </div>
+          <div id="cpu" style = "background-color: blue" class="col-xs-6">
+            Computer's Choice
+              <p id="cpuChoice"></p>
+          </div>
+  </div>
+    <div id="barrier-"></div>
+    <div id="outcome">
+        Who Wins?
+        <p id="result"></p>
+    </div>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="script.js"></script>
   </body>
 
 </html>

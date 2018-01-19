@@ -1,3 +1,5 @@
+// JavaScript File
+
 //Class 1:
         // Fork and clone the repo and set up your project workspace and link files
         // Write HTML for your project
@@ -30,8 +32,71 @@
 // DOCUMENT READY FUNCTION
 $(document).ready(function(){
     $("#button").click(function(){
-        var name = $("#userinput").val();
-        $("#greeting").html(name);
-    });    
+        var userChoice= $("#userinput").val();
+        var computerChoiceArray = ["rock","paper","scissors"];
+        var randomNum = Math.floor(Math.random()*3);
+        var computerChoice = computerChoiceArray[randomNum];
+        if (userChoice === "rock" + computerChoice === "rock") {
+          $("#result").html("Draw");
+        }
+        else if (userChoice === "scissors" + computerChoice === "scissors") {
+                $("#result").html("Draw");
+        }
+        else if (userChoice === "paper" + computerChoice === "paper") {
+                $("#result").html("Draw");
+        }
+        else if (userChoice === "rock" + computerChoice === "scissors") {
+          $("#result").html("Player Wins!");
+        }
+        else if (userChoice === "paper" + computerChoice === "rock") {
+                $("#result").html("Player Wins!");
+        }
+        else if (userChoice === "scissors" + computerChoice === "paper") {
+                $("#result").html("Player Wins!");
+        }
+        else if (userChoice === "rock" + computerChoice === "paper") {
+         $("#result").html("Computer Wins!");
+        }
+        else if (userChoice === "scissors" + computerChoice === "rock") {
+                $("#result").html("Computer Wins!");
+        }
+        else if (userChoice === "paper" + computerChoice === "scissors") {
+         $("#result").html("Computer Wins!");
+        }
         
+         $("#playerChoice").html(userChoice);
+         $("#cpuChoice").html(computerChoice);
+        
+                });
+
+
+// computerChoiceArray[0] = "rock"
+// computerChoiceArray[1] = "paper"
+// computerChoiceArray[2] = "sciccsors"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 })
