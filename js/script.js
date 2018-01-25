@@ -36,34 +36,37 @@ $(document).ready(function(){
         var computerChoiceArray = ["rock","paper","scissors"];
         var randomNum = Math.floor(Math.random()*3);
         var computerChoice = computerChoiceArray[randomNum];
-        if (userChoice === "rock" + computerChoice === "rock") {
+        if (userChoice === "rock" && computerChoice === "rock") {
           $("#result").html("Draw");
         }
-        else if (userChoice === "scissors" + computerChoice === "scissors") {
+        else if (userChoice === "scissors" && computerChoice === "scissors") {
                 $("#result").html("Draw");
         }
-        else if (userChoice === "paper" + computerChoice === "paper") {
+        else if (userChoice === "paper" && computerChoice === "paper") {
                 $("#result").html("Draw");
         }
-        else if (userChoice === "rock" + computerChoice === "scissors") {
+        else if (userChoice === "rock" && computerChoice === "scissors") {
           $("#result").html("Player Wins!");
         }
-        else if (userChoice === "paper" + computerChoice === "rock") {
+        else if (userChoice === "paper" && computerChoice === "rock") {
                 $("#result").html("Player Wins!");
         }
-        else if (userChoice === "scissors" + computerChoice === "paper") {
+        else if (userChoice === "scissors" && computerChoice === "paper") {
                 $("#result").html("Player Wins!");
         }
-        else if (userChoice === "rock" + computerChoice === "paper") {
+        else if (userChoice === "rock" && computerChoice === "paper") {
          $("#result").html("Computer Wins!");
         }
-        else if (userChoice === "scissors" + computerChoice === "rock") {
+        else if (userChoice === "scissors" && computerChoice === "rock") {
                 $("#result").html("Computer Wins!");
         }
-        else if (userChoice === "paper" + computerChoice === "scissors") {
+        else if (userChoice === "paper" && computerChoice === "scissors") {
          $("#result").html("Computer Wins!");
         }
-        
+        else {
+            $("#result").html("Wrong");
+            
+        }
          $("#playerChoice").html(userChoice);
          $("#cpuChoice").html(computerChoice);
         
